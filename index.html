@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <title>KK Xstream LIVE - Kanyakumari's Live TV Website</title>
+        <meta name="description" content="Kanyakumari's Best Live Streaming Entertainment Website">
+        <link rel="shortcut icon" href="https://kkxstreamlive.pages.dev/favicon.ico">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://kkxstreamlive.pages.dev/stylemedia.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="//kkxstream.github.io/js/playerjs-19.12.11.js" type="text/javascript"></script>
+        
+        <style>
+        a {
+  color: #f82249;
+  transition: 0.5s;
+}
+
+a:visited
+a:link
+a:hover,
+a:active,
+a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+#footer {
+  background: #101522;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  padding: 5px;
+  font-size: 18px;
+  background: #222636;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #eee;
+} 
+
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #f82249;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 5px;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #f82249;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+  background: #f82249;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  background: #e0072f;
+}
+
+#footer .copyright {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ddd;
+}
+</style>
+
+    <script>
+        function updateClock() {
+            var clockDisplay = document.getElementById("display");
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            // Convert to 12-hour format
+            var ampm = hours >= 12 ? "PM" : "AM";
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            // Format leading zeros
+            hours = leadingZero(hours);
+            minutes = leadingZero(minutes);
+            seconds = leadingZero(seconds);
+            // Display the time
+            var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+            clockDisplay.textContent = timeString;
+            // Update every second
+            setTimeout(updateClock, 1000);
+        }
+        function leadingZero(number) {
+            return number < 10 ? "0" + number : number;
+        }
+        // Start the clock
+        updateClock();
+    </script>
+
+    </head>
+<body>
+    <nav><img src="https://i.imgur.com/p5tTRB3.jpeg" height="50px" width="256px"><div style="position: absolute;margin-right: 0px;margin-left: 110px;background-color: #000000;color: white;border-bottom: 1px solid #000000;"><marquee direction='left' scrollamount='6' style='margin-top: 5px;margin-bottom: -20px;font-family: Raghu, Raleway, sans-serif;font-size: 20px;'>Current URL - https://kkxstreamlive.pages.dev | You are watching Kanyakumari Xstream LIVE - Malayalam | Tamil | Telugu | Kannada | Hindi | English Live TV Channels Online for Free.</marquee></div> </figure>
+</div><div class="clock-container" class="clock" id="display" style="color:#ff00a5; font-size: 12px; display: flex; overflow-x: hidden; position: absolute; margin-right: 0px; margin-left: 100px; top: 8px; right: 3px; padding: -5"></div></nav>
+    <main>
+        <div id="channels">
+                        
+			<h2 class="category">Sports LIVE</h2>
+			<div class="channel_collapse">
+                		<div class="channel" onclick="play('https://prod-sports-eng-gm.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8')"> <img alt="Sports Eng 1" src="https://i.ibb.co/z8sp6KY/Sportslive1eng.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://live.drmlive-02.workers.dev/jc/122.m3u8')"> <img alt="Big Boss Tamil" src="https://i.ibb.co/z8sp6KY/Sportslive1eng.jpg" /> </div>
+              			
+              			
+                          </div>
+                          <h2 class="category">Live News</h2>
+			<div class="channel_collapse">
+				<div class="channel" onclick="play('https://vidcdn.vidgyor.com/asianet-origin/liveabr/playlist.m3u8')"> <img alt="Asianet News" src="https://i.imgur.com/EQFP7xI.jpeg" /> </div>
+                                <div class="channel" onclick="play('https://nw18live.cdn.jio.com/bpk-tv/News18_Kerala_NW18_MOB/output01/index.m3u8')"> <img alt="News 18 keralam" src="https://i.imgur.com/YQWgikc.jpeg" /> </div>					 
+                                <div class="channel" onclick="play('https://mmtvlive1.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab50/mmtvAdCampaign1/index.m3u8')"> <img alt="Manorama News" src="https://i.imgur.com/xDLym0B.jpeg" /> </div>
+				<div class="channel" onclick="play('https://segment.yuppcdn.net/110322/channel24/playlist.m3u8')"> <img alt="Twenty Four" src="https://i.imgur.com/WscSku1.jpeg" /> </div>
+				<div class="channel" onclick="play('https://www.youtube.com/embed/dt9TnY7znY0')"> <img alt="Kerala Vision News" src="https://i.ibb.co/fxwf9Wy/Keralavisionnews.jpg" /> </div>
+				<div class="channel" onclick="play('https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8')"> <img alt="Zee Malayalam News" src="https://i.imgur.com/GobTkyH.jpeg" /> </div>
+				<div class="channel" onclick="play('https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8')"> <img alt="Real News Kerala" src="https://i.ibb.co/sPPK2Xk/Real-news.jpg" /> </div>
+				<div class="channel" onclick="play('https://live-janamtv.dailyhunt.in/eternowsa/live/amlst:JanamTV_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Janam TV" src="https://i.imgur.com/PHIOlFv.jpeg" /> </div>	 
+                                <div class="channel" onclick="play('https://live-newsmalayalam24x7.dailyhunt.in/eternowsa/live/amlst:newsmalayalam24x7_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="News Malayalam" src="https://i.ibb.co/mtQpjYx/Newsmalayalam.jpg" /> </div>	 
+                                <div class="channel" onclick="play('https://www.youtube.com/embed/-8d8-c0yvyU')"> <img alt="Media One" src="https://i.imgur.com/GuZpU3E.jpeg" /> </div>
+                                <div class="channel" onclick="play('https://live-jaihind.dailyhunt.in/eternowsa/live/amlst:Jaihind_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Jaihind" src="https://i.imgur.com/534gN6A.jpeg" /> </div>
+                                <div class="channel" onclick="play('https://live-reportertv.dailyhunt.in/eternowsa/live/amlst:ReporterTV_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Reporter" src="https://i.imgur.com/XhNvuke.jpeg" /> </div>
+                                <div class="channel" onclick="play('https://live-kairalinews.dailyhunt.in/eternowsa/live/amlst:kairalinews_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Kairali News" src="https://i.imgur.com/14Ne4Uq.jpeg" /> </div>
+                                <div class="channel" onclick="play('https://live-mathrubhumi.dailyhunt.in/eternowsa/live/amlst:mathrubhumi_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Mathrubhumi" src="https://i.imgur.com/f4JR7dc.jpeg" /> </div>
+			        <div class="channel" onclick="play('https://live-news7tamil.dailyhunt.in/eternowsa/live/amlst:news7tamil_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="News7 Tamil" src="https://i.imgur.com/eOpbTh8.jpg" /> </div>
+				<div class="channel" onclick="play('https://live-kalaignarnews.dailyhunt.in/eternowsa/live/amlst:kalaignar_tv_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Kalaignar Seidhigal" src="https://i.imgur.com/EAk9O42.jpeg" /> </div>
+				<div class="channel" onclick="play('https://nw18live.cdn.jio.com/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/index.m3u8')"> <img alt="News18 Tamil" src="https://i.imgur.com/iXHQ1Xb.jpeg" /> </div>
+				<div class="channel" onclick="play('https://dpkvdnzbeen1l.cloudfront.net/index_3.m3u8')"> <img alt="Zee News Tamil" src="https://i.imgur.com/BbI2ivx.jpeg" /> </div>
+				<div class="channel" onclick="play('https://dinamalarvidgyor.pc.cdn.bitgravity.com/dinamalar-origin/liveabr/playlist_dvr.m3u8')"> <img alt="Tinamalar" src="https://i.imgur.com/HhmmrRw.jpeg" /> </div>
+				<div class="channel" onclick="play('https://www.youtube.com/embed/9M02G5c6x6w')"> <img alt="Sun News" src="https://i.imgur.com/AnRciZD.jpeg" /> </div>
+				<div class="channel" onclick="play('https://live-sathiyamtv.dailyhunt.in/eternowsa/live/amlst:sathiyamtv_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Sathiyam TV" src="https://i.ibb.co/dfBYLBk/Sathiyamtv.jpg" /> </div>
+				<div class="channel" onclick="play('https://live-polimernews.dailyhunt.in/eternowsa/live/amlst:polimernews_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Polimer News" src="https://i.imgur.com/uIXTpKD.jpeg" /> </div>
+				<div class="channel" onclick="play('https://live-newsj.dailyhunt.in/eternowsa/live/amlst:newsj_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="NewsJ" src="https://i.imgur.com/AUkAhH6.jpeg" /> </div>
+				<div class="channel" onclick="play('https://live-malaimurasu.dailyhunt.in/eternowsa/live/amlst:malaimurasu_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Malai Murasu" src="https://i.imgur.com/k4iewrs.png" /> </div>
+                                 <div class="channel" onclick="play('https://segment.yuppcdn.net/110322/thanthi/110322/thanthi_1800/playlist.m3u8')"> <img alt="Thanthi TV" src="https://i.imgur.com/IbYJitf.jpeg" /> </div>
+				<div class="channel" onclick="play('https://www.youtube.com/embed/rn1s5DWPGyE')"> <img alt="New Tamil 24x7" src="https://i.imgur.com/zcVeW8p.jpg" /> </div>
+                                <div class="channel" onclick="play('https://live-puthiyathalaimurai.dailyhunt.in/eternowsa/live/amlst:puthiyathalaimurai_,b256,b512,b1024,b1824,.smil/playlist.m3u8')"> <img alt="Pudhiya Thalaimurai" src="https://i.imgur.com/xGjl1T1.png" /> </div>
+                                <div class="channel" onclick="play('https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8')"> <img alt="NDTV 24X7" src="https://i.ibb.co/zsvF98L/Ndtv24x7.jpg" /> </div>
+				<div class="channel" onclick="play('https://timesnowhls.akamaized.net/hls/live/2033769/TNmainMSL4/master.m3u8')"> <img alt="Times NOW" src="https://i.imgur.com/G4VlpP2.png" /> </div>
+				<div class="channel" onclick="play('https://mrnhlslive.akamaized.net/hls/live/2034712/MIRRORNOW4MSL/master.m3u8')"> <img alt="Mirror NOW" src="https://i.imgur.com/7UPdASO.png" /> </div>
+				<div class="channel" onclick="play('https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8')"> <img alt="India Today" src="https://i.imgur.com/8DKBUG4.jpg" /> </div>
+				<div class="channel" onclick="play('https://itvoign.multitvsolution.com/hls/newsx.m3u8')"> <img alt="News X" src="https://i.imgur.com/9rFXYvK.png" /> </div>
+				<div class="channel" onclick="play('https://etnowhls.akamaized.net/hls/live/2034678/ETNOWMSL4/master.m3u8')"> <img alt="ET Now" src="https://i.imgur.com/CYQmxln.png" /> </div>
+				<div class="channel" onclick="play('https://nw18live.cdn.jio.com/bpk-tv/CNBC_TV18_NW18_MOB/output01/index.m3u8')"> <img alt="CNBC TV 18" src="https://i.imgur.com/VZp1Irh.png" /> </div>
+				<div class="channel" onclick="play('https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680/ndtvprofit/ndtvprofitmaster.m3u8')"> <img alt="NDTV Profit" src="https://i.imgur.com/Sd7Js6T.png" /> </div>
+				<div class="channel" onclick="play('https://dai.google.com/linear/hls/event/EezGs5EpSjSr-sYjB2qysw/master.m3u8')"> <img alt="CBS News" src="https://i.imgur.com/NZeAvBi.png" /> </div>
+				<div class="channel" onclick="play('https://cnn-cnninternational-1-de.samsung.wurl.com/manifest/playlist.m3u8')"> <img alt="CNN" src="https://i.imgur.com/KJyrdZW.png" /> </div>
+				<div class="channel" onclick="play('https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8')"> <img alt="Fox News Now" src="https://i.imgur.com/eeHQjFV.png" /> </div>
+				<div class="channel" onclick="play('http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8')"> <img alt="Sky News" src="https://i.imgur.com/Z3InuIH.png" /> </div>
+				<div class="channel" onclick="play('https://rakuten-euronews-1-gb.samsung.wurl.com/manifest/playlist.m3u8')"> <img alt="Euro News" src="https://i.imgur.com/sX5dE44.png" /> </div>
+                		<div class="channel" onclick="play('http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8')"> <img alt="BBC World News" src="https://i.imgur.com/Lq4meoN.png"> </div>
+				<div class="channel" onclick="play('https://bcovlive-a.akamaihd.net/re8d9f611ee4a490a9bb59e52db91414d/us-east-1/us-east-1/734546207001/profile_2/chunklist.m3u8')"> <img alt="CBN News" src="https://i.imgur.com/xXnl9Vb.png" /> </div>
+				<div class="channel" onclick="play('http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8')"> <img alt="France24" src="https://i.imgur.com/Sxyp3cs.png" /> </div>
+				<div class="channel" onclick="play('https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8')"> <img alt="DW English" src="https://i.imgur.com/JvMORcf.png" /> </div>
+				<div class="channel" onclick="play('https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8')"> <img alt="CNA" src="https://i.imgur.com/TnHGaxT.png" /> </div>
+				<div class="channel" onclick="play('https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8')"> <img alt="NHK World Japan" src="https://i.imgur.com/oP2jc4C.png" /> </div>
+				<div class="channel" onclick="play('https://live-hls-web-aje.getaj.net/AJE/index.m3u8')"> <img alt="Al Jazeera" src="https://i.imgur.com/mg0JahH.png" /> </div>
+				<div class="channel" onclick="play('https://live.ptv.com.pk/live/ptvworld/master.m3u8')"> <img alt="PTV World" src="https://i.imgur.com/TcBIb23.jpg" /> </div>
+				<div class="channel" onclick="play('https://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/master.m3u8')"> <img alt="VOA" src="https://i.imgur.com/SdwEFjq.png" /> </div>
+				<div class="channel" onclick="play('https://news.cgtn.com/resource/live/english/cgtn-news.m3u8')"> <img alt="CGTN English" src="https://i.imgur.com/9G9j9wU.png" /> </div>
+				<div class="channel" onclick="play('https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8')"> <img alt="CGTN Documentary" src="https://i.imgur.com/l5Zef9B.png" /> </div>
+				<div class="channel" onclick="play('https://tv-trtworld.live.trt.com.tr/master.m3u8')"> <img alt="TRT World" src="https://i.imgur.com/Pn0UWp9.png" /> </div>
+				<div class="channel" onclick="play('https://austchannel-live.akamaized.net/hls/live/2002729/austchannel-news/master.m3u8')"> <img alt="Australia Channel" src="https://i.imgur.com/7CmXtzU.png" /> </div>
+				
+			</div>
+			<h2 class="category">Local Cable Channel: TN</h2>
+			<div class="channel_collapse">
+                		<div class="channel" onclick="play('https://play.applelive.in/appletv/appletv.m3u8')"> <img alt="Apple TV" src="https://i.ibb.co/C6vQpqY/Appletv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/startv/startv.m3u8')"> <img alt="Star HD" src="https://i.ibb.co/HqmB1LQ/Starhd.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/shatv/shatv.m3u8')"> <img alt="Sha TV" src="https://i.ibb.co/W5n5g6D/Shatv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/prtv/prtv.m3u8')"> <img alt="Pr TV" src="https://i.ibb.co/RjCh74R/Prtv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/suryantv/suryantv.m3u8')"> <img alt="Suryan TV" src="https://i.ibb.co/bQtk5ZV/Suryantv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/darktv/darktv.m3u8')"> <img alt="Dark TV" src="https://i.ibb.co/f0jBJSL/Darktv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/riyatv/riyatv.m3u8')"> <img alt="Riya TV" src="https://i.ibb.co/Vjm9LLH/Riyatv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/selfeetv/selfeetv.m3u8')"> <img alt="Selfee TV" src="https://i.ibb.co/gyNtFHs/Selfie.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/haitvmtm/haitvmtm.m3u8')"> <img alt="Hai TV Mtm" src="https://i.ibb.co/Xj02L8q/Haitvmtm.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/haitv/haitv.m3u8')"> <img alt="Hai TV Ngl" src="https://i.ibb.co/ccPV6jT/Haitvngl.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/enthirantv/enthirantv.m3u8')"> <img alt="Enthiran TV" src="https://i.ibb.co/16rdH39/enthirantv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/jeysontv/jeysontv.m3u8')"> <img alt="Jeyson TV" src="https://i.ibb.co/fYy3Xdb/Jeysonuhd.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/jjmax/jjmax.m3u8')"> <img alt="Jeyson Max & Kathir TV" src="https://i.imgur.com/FapUM0N.gif" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/vasantv/vasantv.m3u8')"> <img alt="Boss TV" src="https://i.ibb.co/MBv5sVy/Bosstv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/jctv/jctv.m3u8')"> <img alt="Jc TV" src="https://i.ibb.co/WB139LF/Jctv.jpg" /> </div>
+              			
+				<div class="channel" onclick="play('https://play.applelive.in/jcvtv/jcvtv.m3u8')"> <img alt="JCV HD" sr
